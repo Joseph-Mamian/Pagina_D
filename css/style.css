@@ -401,7 +401,7 @@ header{
 .box__card-primary_in{
     max-width: 350px;
     padding: 60px 40px;
-    border-radius: 20px;
+    border-radius: 100%;
     margin: 14px;
     transform: scale(0.7);
     transition: all 600ms;
@@ -412,7 +412,7 @@ header{
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
-    border-radius: 20px;
+    border-radius: 100%;
     margin: 14px;
     transform: scale(0.7);
     transition: all 600ms;
@@ -423,7 +423,7 @@ header{
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
-    border-radius: 20px;
+    border-radius: 100%;
     margin: 14px;
     transform: scale(0.7);
     transition: all 600ms;
@@ -432,14 +432,17 @@ header{
 
 .box__card-primary_in:hover{
     border: 1px solid transparent;
+    border-radius: 20px;
     transform: scale(1);
 }
 .box__card-primary_in2:hover{
     border: 1px solid transparent;
+    border-radius: 20px;
     transform: scale(1);
 }
 .box__card-primary_in3:hover{
     border: 1px solid transparent;
+    border-radius: 20px;
     transform: scale(1);
 }
 
@@ -559,10 +562,12 @@ header{
     border: 1px solid transparent;
     transform: scale(1.1);  
     background-color: white;  
+    transform: rotateX('20');
 }
 
 .box__card-primary_perf img{
  border-radius: 300px;
 }
+
 
 /* fin perfiles */

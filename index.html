@@ -6,9 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jotaese.js">
     <script src="https://kit.fontawesome.com/b4b15f0f13.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script>
+        function miFuncion() {
+    var variableLocal = "Soy una variable local";
+    console.log(variableLocal);
+    }
+    miFuncion(); 
+    </script>
+    <!-- ejercicio -->
+    <script>var globalVar = 10;
+
+        function myFunction(){
+            var localVar = 20;
+        console.log(globalVar);
+        console.log(localVar);
+        }
+        myFunction();  
+        </script>
+        <script>
+            function edad(){
+            let Edad= 2;
+            let mensaje= (Edad>=18)?"eres mayor de edad": "eres menor de edad";
+            console.log(mensaje);}
+            edad();
+        </script>
+
+        <script>
+            function calc(){
+                var num1=2;
+                var num2=5;
+                let sum= num1 + num2;
+                console.log (sum);
+                let mul= num1*num2;
+                console.log (mul);
+                let mensaje= (num1>num2)?"el numero 1 es mayor": "el numero 2 es mayor";
+                console.log (mensaje);
+                var boolVar = true;
+                var boolVar = boolVar && (num1>num2);
+                console.log (boolVar);
+                var ternaryResult = (num1>num2)?"Mayor":"menor o igual";
+                console.log (ternaryResult);
+            }
+            calc();
+        </script>
+    
+        <script>
+            let persona = {name:"Ete Serch", age:"82", city:"Perú"}
+            console.log (persona.name)
+            var x;
+            let property = persona.age;
+            console.log (property);
+            console.log (typeof name);
+            console.log (typeof x);
+        </script>
+
+        <script>
+            var n= 15;
+            if (n>0){
+                console.log("el numero es positivo")
+            }else if(n<0){
+                console.log("el numero es negativo")
+            }else {
+                console.log("el numero es 0")
+            }
+        </script>
+<!-- fin ejercicio -->
     <header>
         <div class="container_header">
             <div class="logo">
@@ -22,7 +88,7 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Informacion</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Planes</a></li>
                 </ul>
@@ -64,7 +130,7 @@
     <!-- fin portada -->
     
     <!-- inicio generador de confianza -->
-    <div class="container__trust_img container__card-primary_img">
+    <div class="container__trust_img container__card-primary_img" id="">
         <div class="trust card__primary_img">
             <div class="text__trust text__card-primary_img">
                 <p>Mantente Conectado Con El Mundo</p>
@@ -110,7 +176,7 @@
 
 <!-- Fin del ejercicio -->
 <!-- inicio Servicios -->
-<div class="container__trust container__card-primary">
+<div class="container__trust container__card-primary" id="servicios">
     <div class="trust card__primary">
         <div class="text__trust text__card-primary">
             <h1>Servicios que brindamos para mantenerte Conectado</h1>
@@ -198,14 +264,14 @@
                     <p>Me gusta como tienen en cuenta las ideas que aporto para mejorar la pagina</p>
                 </div>
                 <div class="card__trust_perf box__card-primary_perf">
-                    <img src="img/cover/Programador.jfif" alt="" width="200px">
+                    <img src="img/cover/Programador" alt="" width="200px">
                     <h2>Programador</h2>
                     <p>Nombre: Juan Gomez</p>
                     <p>Edad: 30 años</p>
                     <p>Yo me encargo de que la pagina funcione de la manera correcta y no tenga errores</p>
                 </div>
                 <div class="card__trust_perf box__card-primary_perf">
-                    <img src="img/cover/Publicitador.jfif" alt="" width="200px">
+                    <img src="img/cover/publicista.jpg" alt="" width="200px">
                     <h2>Publicista</h2>
                     <p>Nombre: Pedro Paez</p>
                     <p>Edad: 32 años</p>
@@ -217,6 +283,29 @@
 
 
 <!-- fin de perfiles -->
+
+<!-- horas extra -->
+<script>
+    var horas= 20;
+    var salario=1000;
+    var bonus=1.5;
+    var salariof= 0;
+    salario= horas * salario;
+    if (horas<0){
+        let mensaje="no ponga numeros negativos mi compa!!!"
+        console.log(mensaje);
+    }
+        mensaje1="su salario es= "
+        console.log(mensaje1 + salario)
+    
+    if (horas>40){
+        salariof=salario*bonus;
+        mensaje1="su salario es= "
+        console.log(mensaje1 + salariof)
+    }
+    
+</script>
+
 
 </main>
 </body>
