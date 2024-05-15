@@ -288,10 +288,12 @@ header{
 
 .img_coverE{
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #041250;
     display: flex;
 }
 .img_coverE2{
     display: flex;
+    border-radius: 50px;
 }
 
 /* inicio servicios */
@@ -566,7 +568,7 @@ header{
 }
 
 .box__card-primary_perf img{
- border-radius: 300px;
+ border-radius: 100px;
 }
 
 

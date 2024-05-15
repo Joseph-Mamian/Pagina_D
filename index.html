@@ -34,46 +34,9 @@
             console.log(mensaje);}
             edad();
         </script>
-
-        <script>
-            function calc(){
-                var num1=2;
-                var num2=5;
-                let sum= num1 + num2;
-                console.log (sum);
-                let mul= num1*num2;
-                console.log (mul);
-                let mensaje= (num1>num2)?"el numero 1 es mayor": "el numero 2 es mayor";
-                console.log (mensaje);
-                var boolVar = true;
-                var boolVar = boolVar && (num1>num2);
-                console.log (boolVar);
-                var ternaryResult = (num1>num2)?"Mayor":"menor o igual";
-                console.log (ternaryResult);
-            }
-            calc();
-        </script>
     
-        <script>
-            let persona = {name:"Ete Serch", age:"82", city:"Perú"}
-            console.log (persona.name)
-            var x;
-            let property = persona.age;
-            console.log (property);
-            console.log (typeof name);
-            console.log (typeof x);
         </script>
 
-        <script>
-            var n= 15;
-            if (n>0){
-                console.log("el numero es positivo")
-            }else if(n<0){
-                console.log("el numero es negativo")
-            }else {
-                console.log("el numero es 0")
-            }
-        </script>
 <!-- fin ejercicio -->
     <header>
         <div class="container_header">
@@ -257,14 +220,14 @@
             </div>
             <div class="container__trust container__box-cardPrimary_perf">
                 <div class="card__trust_perf box__card-primary_perf">
-                    <img src="img/cover/Diseñadora.jfif" alt="" width="200px">
+                    <img src="img/cover/aimpe3.jfif" alt="" width="200px">
                     <h2>Diseñadora</h2>
                     <p>Nombre: Isabela Gutierrez</p>
                     <p>Edad: 25 años</p>
-                    <p>Me gusta como tienen en cuenta las ideas que aporto para mejorar la pagina</p>
+                    <p>Yo me encargo de que la pagina se vea de una buena forma</p>
                 </div>
                 <div class="card__trust_perf box__card-primary_perf">
-                    <img src="img/cover/Programador" alt="" width="200px">
+                    <img src="img/cover/ete serch.jfif" alt="" width="200px">
                     <h2>Programador</h2>
                     <p>Nombre: Juan Gomez</p>
                     <p>Edad: 30 años</p>
@@ -305,7 +268,138 @@
     }
     
 </script>
+<script>
+    function calc(){
+        var num1=2;
+        var num2=5;
+        let sum= num1 + num2;
+        console.log (sum);
+        let mul= num1*num2;
+        console.log (mul);
+        let mensaje= (num1>num2)?"el numero 1 es mayor": "el numero 2 es mayor";
+        console.log (mensaje);
+        var boolVar = true;
+        var boolVar = boolVar && (num1>num2);
+        console.log (boolVar);
+        var ternaryResult = (num1>num2)?"Mayor":"menor o igual";
+        console.log (ternaryResult);
+    }
+    calc();
+</script>
 
+<script>
+    let persona = {name:"Ete Serch", age:"82", city:"Perú"}
+    console.log (persona.name)
+    var x;
+    let property = persona.age;
+    console.log (property);
+    console.log (typeof name);
+    console.log (typeof x);
+</script>
+
+<script>
+    var n= 15;
+    if (n>0){
+        console.log("el numero es positivo")
+    }else if(n<0){
+        console.log("el numero es negativo")
+    }else {
+        console.log("el numero es 0")
+    }
+</script>
+
+<script>
+    
+var diaDeLaSemana="lunes"
+switch (diaDeLaSemana){
+    case "Enero", "enero":
+    console.log("El primer mes del año");
+    break;
+    case "Febrero", "febrero":
+    console.log("El segundo mes del año");
+    break;
+    case "Marzo", "marzo":
+    console.log("El tercero mes del año");
+    break;
+    case "Abril", "abril":
+    console.log("El cuarto mes del año");
+    break;
+    case "Mayo", "mayo":
+    console.log("El quinto mes del año");
+    break;
+    case "Junio", "junio":
+    console.log("El sexto mes del año");
+    break;
+    case "Julio", "julio":
+    console.log("El septimo mes del año");
+    break;
+    case "Agosto", "agosto":
+    console.log("El octavo mes del año");
+    break;
+    case "Septiembre", "septiembre":
+    console.log("El noveno mes del año");
+    break;
+    case "Octubre", "octubre":
+    console.log("El decimo mes del año");
+    break;
+    case "Noviembre", "noviembre":
+    console.log("El onceavo mes del año");
+    break;
+    case "Diciembre", "diciembre":
+    console.log("El doceavo mes del año");
+    break;
+
+}
+</script>
+
+<script>
+// for (let i = 1; i <= 5; i++) {
+//  console.log(i);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//  if (i % 2 === 0) {
+//  continue;
+//  }
+//  console.log(i);
+// }
+
+// var num = prompt("Ingrese un numero ", " ");
+// var contador= 1;
+// var sumador= 0;
+// while (contador <= num){
+//    sumador = sumador + contador;
+//    contador++;
+// }
+// console.log(sumador);
+
+
+// let num=prompt("ingrese un numero ", " ");
+// let contador=1;
+// let resultado=1;
+// do {
+//     resultado *= contador;
+//  contador++;
+// } while (contador <= num);
+// console.log(resultado)
+
+let num1=prompt("ingrese de donde empezara el rango " , " ");
+let num2=prompt("ingrese de donde terminara el rango " , " ");
+   let par = 0;
+   let impar = 0;
+for(let contador=1; contador <=num2; contador++) {
+    let mod = contador%2;
+   
+    if (mod===0){
+    par++;
+   }else {
+    impar++;
+   }
+}
+console.log (par);
+console.log (impar);
+
+</script>
 
 </main>
 </body>
