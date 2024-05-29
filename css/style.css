@@ -735,12 +735,20 @@ ner__card-primary_perf{
     font-weight: 500;
 }
 
-
+.map_coverLog{
+     margin-left: 100px;
+}
 
 .coverLog input{
   font-size: 30px;
   width: 600px;
   margin-bottom: 20px;
+}
+
+.mensaje{
+    height: 300px;
+    text-align:initial;
+    font-size: 30px;
 }
 
 .coverLog button{
